@@ -1,0 +1,32 @@
+RELIC_LIBRARY = {
+    "burning_blood": dict(name="Burning Blood", desc="Heal 6 HP after each combat."),
+    "vajra": dict(name="Vajra", desc="Start each combat with 1 Strength."),
+    "oddly_smooth_stone": dict(name="Oddly Smooth Stone", desc="Start each combat with 1 Dexterity."),
+    "bag_of_marbles": dict(name="Bag of Marbles", desc="Start each combat: apply 1 Vulnerable to all enemies."),
+    "orichalcum": dict(name="Orichalcum", desc="If you end turn with no Block, gain 6 Block."),
+    "bronze_scales": dict(name="Bronze Scales", desc="Whenever you take attack damage, deal 3 damage back."),
+    "storm_charm": dict(name="Storm Charm", desc="Gain 1 extra Energy every turn."),
+    "torii": dict(name="Torii", desc="Unblocked attack damage of 5 or less is reduced to 1."),
+    "champion_belt": dict(name="Champion's Belt", desc="Whenever you apply Vulnerable, also apply 1 Weak."),
+    "thread_spool": dict(name="Thread Spool", desc="Start each combat with 3 Block."),
+    "philosophers_stone": dict(name="Philosopher's Stone", desc="Start each combat with 2 Strength and 2 Dexterity.", tier=2),
+    "runic_pyramid": dict(name="Runic Pyramid", desc="You no longer discard your hand at the end of turn.", tier=2),
+    "sacred_bark": dict(name="Sacred Bark", desc="Potion effects are doubled.", tier=2),
+    "charons_ashes": dict(name="Charon's Ashes", desc="Whenever a card is Exhausted, deal 3 damage to ALL enemies.", tier=2),
+    "shuriken": dict(name="Shuriken", desc="Every 3rd Attack card played in a turn grants 1 Strength (this combat, permanent)."),
+    "kunai": dict(name="Kunai", desc="Every 3rd Attack card played in a turn grants 1 Dexterity (this combat, permanent)."),
+    "boot": dict(name="Boot", desc="Attacks always deal at least 5 damage."),
+    "warped_tongs": dict(name="Warped Tongs", desc="Whenever you upgrade a card at a Rest Site or Shop, it is upgraded twice instead.", tier=2),
+    "purity": dict(name="Purity", desc="You are immune to gaining new Curse cards.", tier=2),
+    "meat_on_the_bone": dict(name="Meat on the Bone", desc="If your HP is 50% or below at the end of combat, heal 12 HP."),
+    "greed_charm": dict(name="Greed Charm", desc="Gold Goblins never flee from you."),
+    "second_chance": dict(name="Second Chance", desc="The first time you would die, instead revive to 15% max HP. Consumed on use.", tier=2),
+    "runic_cube": dict(name="Runic Cube", desc="Whenever you defeat an Elite, permanently gain 1 Strength and 1 Dexterity."),
+    "pocket_watch": dict(name="Pocket Watch", desc="Draw 1 additional card at the start of each turn."),
+    "windfall_charm": dict(name="Windfall Charm", desc="The first card you play each turn costs 0 Energy."),
+    "compounding_interest": dict(name="Compounding Interest", desc="Gain bonus gold from combat rewards, scaling with enemies you've defeated this run."),
+    "iron_will": dict(name="Iron Will", desc="The first time you drop below 25% HP each combat, gain 1 Strength (permanent, that combat)."),
+}
+
+RELIC_POOL = list(RELIC_LIBRARY.keys())
+RELIC_POOL_ACT1 = [r for r in RELIC_POOL if RELIC_LIBRARY[r].get("tier", 1) == 1]
