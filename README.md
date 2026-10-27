@@ -1,2 +1,2 @@
 # TerminalRoguelike
-A roguelike game for your terminal 
+A roguelike for your terminal 
